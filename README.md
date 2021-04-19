@@ -19,6 +19,6 @@ These are the implemented features within the app:
 ## Contributors :technologist:
 Full Name | Profile
 ------------ | -------------
-Ephraim Awinzoya Kaizen | @EKaizen2
+Ephraim Awinzoya Adongo | @EKaizen2
 Goodluck Caiser Malata | @GoodluckCaiserMalata
 Mahalinoro Razafimanjato | @Mahalinoro
