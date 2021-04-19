@@ -10,8 +10,8 @@ class OnboardingFirst extends StatelessWidget {
         body: Stack(
           children: [
             Container(
-              constraints: BoxConstraints(maxHeight: 600),
-              height: 600,
+              // constraints: BoxConstraints(maxHeight: 600),
+              height: MediaQuery.of(context).size.height * 0.80,
               child: Image.asset("assets/images/Onboarding1.png",
                   fit: BoxFit.cover),
             ),
@@ -54,10 +54,10 @@ class OnboardingFirst extends StatelessWidget {
                 ]),
                 Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   Container(
-                      padding: EdgeInsets.only(top: 420, bottom: 25),
+                      padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.55 , bottom: 25),
                       child: Container(
                         child: ConstrainedBox(
-                          constraints: BoxConstraints(maxWidth: 320),
+                          constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width*0.80),
                           child: Text(
                             'Browse any second-hand items that fits your need. Find your favorite product and buy/exchange it. ',
                             textAlign: TextAlign.center,
@@ -72,8 +72,7 @@ class OnboardingFirst extends StatelessWidget {
                 ]),
                 Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   Container(
-                      padding: EdgeInsets.only(top: 10),
-                      width: 160,
+                      width: MediaQuery.of(context).size.width*0.35,
                       height: 20,
                       child: Container(
                           child: Image.asset("assets/images/dots1.png"))),

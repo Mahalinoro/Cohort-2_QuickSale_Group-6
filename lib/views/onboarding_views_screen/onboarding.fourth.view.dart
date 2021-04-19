@@ -10,8 +10,7 @@ class OnboardingFourth extends StatelessWidget {
         body: Stack(
           children: [
             Container(
-              constraints: BoxConstraints(maxHeight: 600),
-              height: 600,
+              height: MediaQuery.of(context).size.height * 0.80,
               child: Image.asset("assets/images/Onboarding4.png",
                   fit: BoxFit.cover),
             ),
@@ -57,10 +56,10 @@ class OnboardingFourth extends StatelessWidget {
 
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                     Container(
-                        padding: EdgeInsets.only(top: 420, bottom: 25),
+                        padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.55, bottom: 25),
                         child: Container(
                           child: ConstrainedBox(
-                            constraints: BoxConstraints(maxWidth: 330),
+                            constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width*0.85),
                             child: Text(
                               'From cash on delivery to online payment, pay with the best method that is convenient for you.',
                               textAlign: TextAlign.center,
@@ -76,8 +75,7 @@ class OnboardingFourth extends StatelessWidget {
                   
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                     Container(
-                        padding: EdgeInsets.only(top: 10),
-                        width: 160,
+                        width: MediaQuery.of(context).size.width*0.35,
                         height: 20,
                         child: Container(
                             child: Image.asset("assets/images/dots4.png"))),

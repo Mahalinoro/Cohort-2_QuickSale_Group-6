@@ -10,8 +10,7 @@ class OnboardingSecond extends StatelessWidget {
         body: Stack(
           children: [
             Container(
-              constraints: BoxConstraints(maxHeight: 600),
-              height: 600,
+              height: MediaQuery.of(context).size.height * 0.80,
               child: Image.asset("assets/images/Onboarding2.png",
                   fit: BoxFit.cover),
             ),
@@ -57,10 +56,10 @@ class OnboardingSecond extends StatelessWidget {
 
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                     Container(
-                        padding: EdgeInsets.only(top: 420, bottom: 25),
+                        padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.55, bottom: 25),
                         child: Container(
                           child: ConstrainedBox(
-                            constraints: BoxConstraints(maxWidth: 330),
+                            constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width*0.85),
                             child: Text(
                               'Take a picture of an item that you don’t use anymore, upload it with necessary information then sell it.',
                               textAlign: TextAlign.center,
@@ -76,8 +75,7 @@ class OnboardingSecond extends StatelessWidget {
                   
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                     Container(
-                        padding: EdgeInsets.only(top: 10),
-                        width: 160,
+                        width: MediaQuery.of(context).size.width*0.35,
                         height: 20,
                         child: Container(
                             child: Image.asset("assets/images/dots2.png"))),

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:quicksale/models/product.dart';
+import 'package:quicksale/models/user.dart';
+import 'package:provider/provider.dart';
+import 'package:quicksale/services/database.dart';
 
 class Item extends StatelessWidget {
   final Product product;
@@ -8,6 +11,8 @@ class Item extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final user = context.watch<UserModel>();
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -31,7 +36,7 @@ class Item extends StatelessWidget {
               child: Container(
                 width: 350,
                 margin:
-                    EdgeInsets.only(left: 20, right: 20, top: 30, bottom: 40),
+                    EdgeInsets.only(left: 20, right: 20, top: 30, bottom: 30),
                 padding: EdgeInsets.all(20),
                 decoration: BoxDecoration(
                     border: Border.all(color: Colors.white54),
@@ -40,9 +45,9 @@ class Item extends StatelessWidget {
                 child: Column(
                   children: [
                     SizedBox(
-                      height: 180,
+                      width: 180,
                       child: Image(
-                      image: AssetImage(product.photoURL),  
+                      image: NetworkImage(product.photoURL), fit: BoxFit.contain 
                       ),
                     ),
                     SizedBox(
@@ -89,6 +94,7 @@ class Item extends StatelessWidget {
                       height: 5,
                     ),
                     SizedBox(
+                      height: MediaQuery.of(context).size.height * 0.17,
                       child: Text(
                           product.description,
                           textAlign: TextAlign.justify,
@@ -111,7 +117,23 @@ class Item extends StatelessWidget {
                               EdgeInsets.symmetric(
                                   horizontal: 12, vertical: 12)),
                         ),
-                        onPressed: () {},
+                        onPressed: () async{
+                          DatabaseService(documentId: user.uid)
+                              .addToCart(product.id);
+
+                          final snackBar = SnackBar(
+                            content: Text('Added to Cart'),
+                            action: SnackBarAction(
+                              label: 'Undo',
+                              textColor: Color(0xFF9BA9FF),
+                              onPressed: () async {
+                                DatabaseService(documentId: user.uid)
+                                 .removeFromCart(product.id);
+                              },
+                            ),
+                          );
+                          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                        },
                       ),
                     )
                   ],

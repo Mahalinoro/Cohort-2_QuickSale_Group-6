@@ -10,8 +10,7 @@ class OnboardingThird extends StatelessWidget {
         body: Stack(
           children: [
             Container(
-              constraints: BoxConstraints(maxHeight: 600),
-              height: 600,
+              height: MediaQuery.of(context).size.height * 0.80,
               child: Image.asset("assets/images/Onboarding3.png",
                   fit: BoxFit.cover),
             ),
@@ -57,10 +56,10 @@ class OnboardingThird extends StatelessWidget {
 
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                     Container(
-                        padding: EdgeInsets.only(top: 420, bottom: 10),
+                        padding: EdgeInsets.only(top: MediaQuery.of(context).size.height*0.55, bottom: 10),
                         child: Container(
                           child: ConstrainedBox(
-                            constraints: BoxConstraints(maxWidth: 330),
+                            constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width*0.85),
                             child: Text(
                               'Want to bargain, complain, or have some deal with the vendor of a specific item that caught your eyes, contact him/she directly via private messaging.',
                               textAlign: TextAlign.center,
@@ -76,8 +75,7 @@ class OnboardingThird extends StatelessWidget {
                   
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                     Container(
-                        padding: EdgeInsets.only(top: 10),
-                        width: 160,
+                        width: MediaQuery.of(context).size.width*0.35,
                         height: 20,
                         child: Container(
                             child: Image.asset("assets/images/dots3.png"))),

@@ -54,7 +54,7 @@ class WidgetProfile extends StatelessWidget {
         ],
       ),
       drawer: CustomDrawer(),
-      body: Container(
+      body: SingleChildScrollView(child: Container(
         margin: EdgeInsets.only(top: 20, right: 40, left: 40),
         child: Column(
           children: [
@@ -352,6 +352,6 @@ class WidgetProfile extends StatelessWidget {
           ],
         ),
       ),
-    ));
+    )));
   }
 }
