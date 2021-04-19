@@ -8,12 +8,12 @@ We aim at reducing wastes while maintaining the consumer culture. People should 
 
 ## Functionalities
 These are the implemented features within the app:
-- [x] On-boarding: The app comes with several onboarding screens. These screens contain a quick guide overview of the app use cases.
-- [x] Email Authentication: All users must either log in or signup to access the app by entering their email and password.
-- [x] Custom Profile: When a user is authenticated, they can update their personal information. Users can replace their profile picture by either choosing an image from their device or capturing a new profile picture with the camera. 
-- [x] Notifications: Users can receive notifications on their phones. They will receive notifications when they access the app at the start, signup, and login.
-- [x] Sell or Buy items: Users can sell items by adding a product from their profile page. They can also buy any items from the Discover Page where all the products are displayed. 
-- [x] Favorites & Order History: Users can add a product to their favorites section. Once a successful purchase is made, the record is saved in the order history section to track previous purchases.
+- [x] **On-boarding:** The app comes with several onboarding screens. These screens contain a quick guide overview of the app use cases.
+- [x] **Email Authentication:** All users must either log in or signup to access the app by entering their email and password.
+- [x] **Custom Profile:** When a user is authenticated, they can update their personal information. Users can replace their profile picture by either choosing an image from their device or capturing a new profile picture with the camera. 
+- [x] **Notifications:** Users can receive notifications on their phones. They will receive notifications when they access the app at the start, signup, and login.
+- [x] **Sell or Buy items:** Users can sell items by adding a product from their profile page. They can also buy any items from the Discover Page where all the products are displayed. 
+- [x] **Favorites & Order History:** Users can add a product to their favorites section. Once a successful purchase is made, the record is saved in the order history section to track previous purchases.
 
 
 ## Contributors :technologist:
