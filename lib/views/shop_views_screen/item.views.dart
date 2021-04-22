@@ -17,7 +17,13 @@ class Item extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xFF9BA9FF),
-          actions: [
+          leading: IconButton(
+              icon: Icon(Icons.navigate_before),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            ),
+          actions: [ 
             IconButton(
                 icon: Icon(Icons.shopping_cart_outlined), onPressed: () {}),
           ],
@@ -46,9 +52,10 @@ class Item extends StatelessWidget {
                   children: [
                     SizedBox(
                       width: 180,
+                      height: 180,
                       child: Image(
-                      image: NetworkImage(product.photoURL), fit: BoxFit.contain 
-                      ),
+                          image: NetworkImage(product.photoURL),
+                          fit: BoxFit.contain),
                     ),
                     SizedBox(
                       height: 15,
@@ -63,7 +70,7 @@ class Item extends StatelessWidget {
                                   fontFamily: 'MartelSans')),
                         ),
                         Expanded(
-                          child: Text(product.price,
+                          child: Text('\$${product.price}',
                               textAlign: TextAlign.end,
                               style: TextStyle(
                                   fontSize: 15,
@@ -95,8 +102,7 @@ class Item extends StatelessWidget {
                     ),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.17,
-                      child: Text(
-                          product.description,
+                      child: Text(product.description,
                           textAlign: TextAlign.justify,
                           style: TextStyle(
                               fontSize: 11,
@@ -117,7 +123,7 @@ class Item extends StatelessWidget {
                               EdgeInsets.symmetric(
                                   horizontal: 12, vertical: 12)),
                         ),
-                        onPressed: () async{
+                        onPressed: () async {
                           DatabaseService(documentId: user.uid)
                               .addToCart(product.id);
 
@@ -128,7 +134,7 @@ class Item extends StatelessWidget {
                               textColor: Color(0xFF9BA9FF),
                               onPressed: () async {
                                 DatabaseService(documentId: user.uid)
-                                 .removeFromCart(product.id);
+                                    .removeFromCart(product.id);
                               },
                             ),
                           );

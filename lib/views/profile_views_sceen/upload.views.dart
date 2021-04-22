@@ -237,8 +237,8 @@ class UploadItemFormState extends State<UploadItemForm> {
                         .addProductData(
                             title,
                             photoURL,
-                            '\$$price',
-                            '\$$priceDelivery',
+                            price,
+                            priceDelivery,
                             userData.uid,
                             userData.name,
                             description);

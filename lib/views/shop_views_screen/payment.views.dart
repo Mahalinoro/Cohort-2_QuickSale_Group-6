@@ -46,7 +46,7 @@ class Payment extends StatelessWidget {
                       color: Colors.white54),
                   child: Column(children: [
                     SizedBox(
-                      height: 50,
+                      height: 20,
                     ),
                     SizedBox(
                       child: Text('Confirm Order and Pay',
@@ -57,7 +57,7 @@ class Payment extends StatelessWidget {
                           )),
                     ),
                     SizedBox(
-                      height: 40,
+                      height: 30,
                     ),
                     Row(
                       children: [
