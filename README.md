@@ -24,9 +24,9 @@ Goodluck Caiser Malata | @GoodluckCaiserMalata
 Mahalinoro Razafimanjato | @Mahalinoro
 
 ## Important Links:
-Task Tracker: [LINK](https://docs.google.com/spreadsheets/d/1IFnQZ-pufihI4fzJ343Eexm4M7KImxvRUXfo4dFxUkw/edit?usp=sharing)
-High Fidelity Prototype: [LINK](https://www.figma.com/file/qh4tfk0lOzCwDiUViBVp3W/QuickSale)
-Documentation: [LINK](https://drive.google.com/file/d/1r0hGzb1cYS-Hqheon7CUhH9hsQ-I337H/view?usp=sharing)
-Video Presentation: [LINK](https://youtu.be/ExWTZ8X_M5M)
-Video Demo: [LINK](https://youtu.be/zONurk2ZJUw)
-App Tester (Already distributed - check email)
+- Task Tracker: [LINK](https://docs.google.com/spreadsheets/d/1IFnQZ-pufihI4fzJ343Eexm4M7KImxvRUXfo4dFxUkw/edit?usp=sharing)
+- High Fidelity Prototype: [LINK](https://www.figma.com/file/qh4tfk0lOzCwDiUViBVp3W/QuickSale)
+- Documentation: [LINK](https://drive.google.com/file/d/1r0hGzb1cYS-Hqheon7CUhH9hsQ-I337H/view?usp=sharing)
+- Video Presentation: [LINK](https://youtu.be/ExWTZ8X_M5M)
+- Video Demo: [LINK](https://youtu.be/zONurk2ZJUw)
+- App Tester (Already distributed - check email)
